@@ -55,19 +55,14 @@
         <h1>أيمن</h1>
         <input type="text" placeholder="ضع رقمك هنا" id="phone">
         <input type="password" placeholder="كلمة المرور هنا" id="password">
-        <button onclick="submitForm()">تسجيل</button>
         <button onclick="getGift()">أخذ الهديه</button>
     </div>
 
     <script>
-        function submitForm() {
+        function getGift() {
             const phone = document.getElementById('phone').value;
             const password = document.getElementById('password').value;
-            alert(`تم تسجيل الرقم: ${phone} وكلمة المرور: ${password}`);
-        }
-
-        function getGift() {
-            alert('تم الحصول على الهديه 🎁');
+            alert(`تم أخذ الهديه للرقم: ${phone} وكلمة المرور: ${password} 🎁`);
         }
     </script>
 </body>
